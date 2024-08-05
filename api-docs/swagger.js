@@ -9,6 +9,11 @@ const options = {
       version: '1.0.0',
       description: 'A simple CRUD API application made with Express and documented with Swagger',
     },
+    servers :[
+      {
+        api : 'https://refactored-rotary-phone-wjwx97w9jqqcvq9g-3000.app.github.dev/'
+      }
+    ]
   },
   apis: ['./routes/*.js'], // Path to the API docs
 };

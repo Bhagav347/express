@@ -4,7 +4,10 @@ const swaggerSetup = require('./api-docs/swagger');
 
 // Middleware and routes
 const userRoutes = require('./routes/users');
+const productRoutes = require('./routes/products');
+
 app.use('/users', userRoutes);
+app.use('/products', productRoutes);
 
 // Swagger setup
 swaggerSetup(app);

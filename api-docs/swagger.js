@@ -10,7 +10,7 @@ const options = {
       description: 'A simple CRUD API application made with Express and documented with Swagger',
     },
   },
-  apis: ['./routes/routes.js'], // Files containing annotations as above
+  apis: ['./routes/*.js'], // Path to the API docs
 };
 
 const specs = swaggerJsdoc(options);

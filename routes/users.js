@@ -1,3 +1,6 @@
+const express = require('express');
+const router = express.Router();
+
 /**
  * @swagger
  * tags:
@@ -31,11 +34,7 @@
  *                     example: Leanne Graham
  */
 
-const express = require('express');
-const router = express.Router();
-
 router.get('/', (req, res) => {
-  // Your code to get users
   res.send([{ id: 1, name: 'Leanne Graham' }]);
 });
 

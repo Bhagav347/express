@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const swaggerSetup = require('./api-docs/swagger');
 
-// Your other middlewares and routes
-const userRoutes = require('./routes/routes');
+// Middleware and routes
+const userRoutes = require('./routes/users');
 app.use('/users', userRoutes);
 
 // Swagger setup
